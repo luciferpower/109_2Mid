@@ -31,7 +31,7 @@
             <asp:ListItem>否</asp:ListItem>
             <asp:ListItem>是</asp:ListItem>
         </asp:RadioButtonList>
-        <asp:TextBox ID="tb_Des" runat="server" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="tb_Des" runat="server" Width="400px" AutoPostBack="True" Visible="False"></asp:TextBox>
         <p>
             <asp:Button ID="btn_Sub" runat="server" OnClick="btn_Sub_Click" Text="送出" />
         </p>
