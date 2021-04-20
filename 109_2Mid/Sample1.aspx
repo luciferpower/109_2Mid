@@ -18,9 +18,9 @@
         <asp:TextBox ID="tb_Pass" runat="server" Height="15px" Width="200px"></asp:TextBox>
         <p>
             <asp:Label ID="Label3" runat="server" Text="興趣"></asp:Label>
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="看書" />
-            <asp:CheckBox ID="CheckBox2" runat="server" Text="打電動" />
-            <asp:CheckBox ID="CheckBox3" runat="server" Text="其他" />
+            <asp:CheckBox ID="CheckBox1" runat="server" Text="看書" AutoPostBack="True" OnCheckedChanged="CheckBox1_CheckedChanged" />
+            <asp:CheckBox ID="CheckBox2" runat="server" Text="打電動" AutoPostBack="True" OnCheckedChanged="CheckBox2_CheckedChanged" />
+            <asp:CheckBox ID="CheckBox3" runat="server" Text="其他" AutoPostBack="True" OnCheckedChanged="CheckBox3_CheckedChanged" />
         </p>
         <asp:Label ID="Label4" runat="server" Text="其他連結"></asp:Label>
         <asp:HyperLink ID="HyperLink1" runat="server" Height="30px" ImageUrl="aws-brands.svg" NavigateUrl="https://aws.amazon.com/tw/" Width="30px">HyperLink</asp:HyperLink>
