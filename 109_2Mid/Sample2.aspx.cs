@@ -17,6 +17,10 @@ namespace _109_2Mid {
             lb_Msg.Text += ddl_Area.SelectedValue + "<br />";
             lb_Msg.Text += ddl_Place.SelectedValue + "<br />";
             lb_Msg.Text += tb_Name.Text + "<br />";
+            if (rbl_Res.SelectedValue == "是")
+            {
+                lb_Msg.Text += tb_Des.Text;
+            }
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -34,6 +38,11 @@ namespace _109_2Mid {
                 ddl_Place.Items.Add(new ListItem("台中", "台中"));
                 ddl_Place.Items.Add(new ListItem("南投", "南投"));
             }
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -27,7 +27,7 @@
             <asp:TextBox ID="tb_Name" runat="server"></asp:TextBox>
         </p>
         <asp:Label ID="Label2" runat="server" Text="其他"></asp:Label>
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+        <asp:RadioButtonList ID="rbl_Res" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
             <asp:ListItem>否</asp:ListItem>
             <asp:ListItem>是</asp:ListItem>
         </asp:RadioButtonList>
